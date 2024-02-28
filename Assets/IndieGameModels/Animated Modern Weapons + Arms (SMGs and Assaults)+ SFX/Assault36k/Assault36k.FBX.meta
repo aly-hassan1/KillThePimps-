@@ -314,7 +314,7 @@ ModelImporter:
     second: HK_G36k
   - first:
       74: 7400000
-    second: Take 003 reload
+    second: Take 003 shoot
   - first:
       95: 9500000
     second: //RootNode
@@ -351,11 +351,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 003 reload
+      name: Take 003 shoot
       takeName: Take 001
       internalID: 7400000
-      firstFrame: 114
-      lastFrame: 160
+      firstFrame: 99
+      lastFrame: 101
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

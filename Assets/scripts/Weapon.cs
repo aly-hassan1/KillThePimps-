@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
 
     public AudioSource shootingSound;
     public AudioSource emptyGunShot;
+    public AudioSource fullReloadingSound;
     public AudioSource reloadingSound;
     public ParticleSystem mozzelEffect;
     public GameObject impactEffect;
@@ -17,7 +18,6 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float fireRate, reloadTime;
     [SerializeField] private bool isAutomatic;
     [SerializeField] private int magazineSize;
-    private Animation anim;
     public Animator animator;
     public int ammoLeft;
     public bool isShooting, readyToShoot, reloading;
@@ -27,11 +27,8 @@ public class Weapon : MonoBehaviour
     {
         ammoLeft = magazineSize;
         readyToShoot = true;
-
-        anim = GetComponent<Animation>();
-        animator = gameObject.GetComponent<Animator>();
+    
         uiManager = GameObject.Find("A7A").GetComponent<UIManager>();
-        animator.SetBool("idle", true);
 
     }
 
@@ -71,10 +68,12 @@ public class Weapon : MonoBehaviour
             Destroy(impactGo, 2f);
             shootingSound.Play();
             mozzelEffect.Play();
+            animator.GetComponent<Animator>().Play("shoot");
 
         }
         else
         {
+             animator.GetComponent<Animator>().Play("shoot");
              shootingSound.Play();
              mozzelEffect.Play();
              GameObject impactGo = Instantiate(impactEffect, hitinfo.point, Quaternion.LookRotation(hitinfo.normal));
@@ -82,6 +81,7 @@ public class Weapon : MonoBehaviour
 
 
         }
+
         ammoLeft--;
         uiManager.UpdateAmmo(ammoLeft);
         if (ammoLeft >= 0)
@@ -104,9 +104,20 @@ public class Weapon : MonoBehaviour
     }
     public void Reload()
     {
-        reloadingSound.Play();
         reloading = true;
         Invoke("ReloadFinish", reloadTime);
+        if(ammoLeft == 0 && reloading)
+        {
+            animator.GetComponent<Animator>().Play("reload Empty");
+            fullReloadingSound.Play();
+
+        }
+        if (ammoLeft > 0 && reloading ) 
+        {
+            animator.GetComponent<Animator>().Play("reload");
+            reloadingSound.Play();
+
+        }
     }
     private void ReloadFinish()
     {
