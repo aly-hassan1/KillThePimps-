@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f898e1507082ff45a3bb9a9b504aae2
+guid: 13604159c12019f4f99fcfcf96b878e6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable:
@@ -8,103 +8,103 @@ ModelImporter:
     second: Body
   - first:
       1: 100002
-    second: Bone1
+    second: Bone
   - first:
       1: 100004
-    second: Bone10
+    second: Bone1
   - first:
       1: 100006
-    second: Bone11
+    second: Bone10
   - first:
       1: 100008
-    second: Bone12
+    second: Bone11
   - first:
       1: 100010
-    second: Bone13
+    second: Bone12
   - first:
       1: 100012
-    second: Bone14
+    second: Bone13
   - first:
       1: 100014
-    second: Bone15
+    second: Bone14
   - first:
       1: 100016
-    second: Bone16
+    second: Bone15
   - first:
       1: 100018
-    second: Bone17
+    second: Bone16
   - first:
       1: 100020
-    second: Bone18
+    second: Bone17
   - first:
       1: 100022
-    second: Bone19
+    second: Bone18
   - first:
       1: 100024
-    second: Bone2
+    second: Bone19
   - first:
       1: 100026
-    second: Bone20
+    second: Bone2
   - first:
       1: 100028
-    second: Bone21
+    second: Bone20
   - first:
       1: 100030
-    second: Bone22
+    second: Bone21
   - first:
       1: 100032
-    second: Bone23
+    second: Bone22
   - first:
       1: 100034
-    second: Bone24
+    second: Bone23
   - first:
       1: 100036
-    second: Bone25
+    second: Bone24
   - first:
       1: 100038
-    second: Bone26
+    second: Bone25
   - first:
       1: 100040
-    second: Bone27
+    second: Bone26
   - first:
       1: 100042
-    second: Bone28
+    second: Bone27
   - first:
       1: 100044
-    second: Bone29
+    second: Bone28
   - first:
       1: 100046
-    second: Bone3
+    second: Bone29
   - first:
       1: 100048
-    second: Bone30
+    second: Bone3
   - first:
       1: 100050
-    second: Bone31
+    second: Bone30
   - first:
       1: 100052
-    second: Bone32
+    second: Bone31
   - first:
       1: 100054
-    second: Bone33
+    second: Bone32
   - first:
       1: 100056
-    second: Bone34
+    second: Bone33
   - first:
       1: 100058
-    second: Bone35
+    second: Bone34
   - first:
       1: 100060
-    second: Bone36
+    second: Bone35
   - first:
       1: 100062
-    second: Bone37
+    second: Bone36
   - first:
       1: 100064
-    second: Bone38
+    second: Bone37
   - first:
       1: 100066
-    second: Bone39
+    second: Bone38
   - first:
       1: 100068
     second: Bone4
@@ -113,7 +113,7 @@ ModelImporter:
     second: Bone40
   - first:
       1: 100072
-    second: Bone41
+    second: bone41
   - first:
       1: 100074
     second: Bone44
@@ -146,118 +146,118 @@ ModelImporter:
     second: knife
   - first:
       1: 100094
-    second: mag
-  - first:
-      1: 100096
     second: //RootNode
   - first:
+      1: 100096
+    second: M16A4
+  - first:
       1: 100098
-    second: SCAR
+    second: SMOKE
   - first:
       1: 100100
-    second: SMOKE
+    second: zawl
   - first:
       4: 400000
     second: Body
   - first:
       4: 400002
-    second: Bone1
+    second: Bone
   - first:
       4: 400004
-    second: Bone10
+    second: Bone1
   - first:
       4: 400006
-    second: Bone11
+    second: Bone10
   - first:
       4: 400008
-    second: Bone12
+    second: Bone11
   - first:
       4: 400010
-    second: Bone13
+    second: Bone12
   - first:
       4: 400012
-    second: Bone14
+    second: Bone13
   - first:
       4: 400014
-    second: Bone15
+    second: Bone14
   - first:
       4: 400016
-    second: Bone16
+    second: Bone15
   - first:
       4: 400018
-    second: Bone17
+    second: Bone16
   - first:
       4: 400020
-    second: Bone18
+    second: Bone17
   - first:
       4: 400022
-    second: Bone19
+    second: Bone18
   - first:
       4: 400024
-    second: Bone2
+    second: Bone19
   - first:
       4: 400026
-    second: Bone20
+    second: Bone2
   - first:
       4: 400028
-    second: Bone21
+    second: Bone20
   - first:
       4: 400030
-    second: Bone22
+    second: Bone21
   - first:
       4: 400032
-    second: Bone23
+    second: Bone22
   - first:
       4: 400034
-    second: Bone24
+    second: Bone23
   - first:
       4: 400036
-    second: Bone25
+    second: Bone24
   - first:
       4: 400038
-    second: Bone26
+    second: Bone25
   - first:
       4: 400040
-    second: Bone27
+    second: Bone26
   - first:
       4: 400042
-    second: Bone28
+    second: Bone27
   - first:
       4: 400044
-    second: Bone29
+    second: Bone28
   - first:
       4: 400046
-    second: Bone3
+    second: Bone29
   - first:
       4: 400048
-    second: Bone30
+    second: Bone3
   - first:
       4: 400050
-    second: Bone31
+    second: Bone30
   - first:
       4: 400052
-    second: Bone32
+    second: Bone31
   - first:
       4: 400054
-    second: Bone33
+    second: Bone32
   - first:
       4: 400056
-    second: Bone34
+    second: Bone33
   - first:
       4: 400058
-    second: Bone35
+    second: Bone34
   - first:
       4: 400060
-    second: Bone36
+    second: Bone35
   - first:
       4: 400062
-    second: Bone37
+    second: Bone36
   - first:
       4: 400064
-    second: Bone38
+    second: Bone37
   - first:
       4: 400066
-    second: Bone39
+    second: Bone38
   - first:
       4: 400068
     second: Bone4
@@ -266,7 +266,7 @@ ModelImporter:
     second: Bone40
   - first:
       4: 400072
-    second: Bone41
+    second: bone41
   - first:
       4: 400074
     second: Bone44
@@ -299,28 +299,28 @@ ModelImporter:
     second: knife
   - first:
       4: 400094
-    second: mag
-  - first:
-      4: 400096
-    second: SCAR
-  - first:
-      4: 400098
     second: //RootNode
   - first:
-      4: 400100
+      4: 400096
+    second: M16A4
+  - first:
+      4: 400098
     second: SMOKE
   - first:
+      4: 400100
+    second: zawl
+  - first:
       43: 4300000
-    second: SCAR
+    second: M16A4
   - first:
       74: 7400000
-    second: start
+    second: Take 001 reload
   - first:
       95: 9500000
     second: //RootNode
   - first:
       137: 13700000
-    second: SCAR
+    second: M16A4
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -351,11 +351,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001 idle
+      name: Take 001 reload
       takeName: Take 001
-      internalID: 1827226128182048838
-      firstFrame: 13
-      lastFrame: 94
+      internalID: 7400000
+      firstFrame: 114
+      lastFrame: 155
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

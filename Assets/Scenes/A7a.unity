@@ -23916,6 +23916,7 @@ MonoBehaviour:
   reloadTime: 3
   isAutomatic: 1
   magazineSize: 50
+  animator: {fileID: 998733170}
   ammoLeft: 0
   isShooting: 0
   readyToShoot: 0
@@ -34396,7 +34397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &984441624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35367,6 +35368,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e3154509dffcee43b310f50e8461b53, type: 3}
+--- !u!95 &998733170 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
+  m_PrefabInstance: {fileID: 1823770388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &999963617 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4192135132426480, guid: ed93438c3615e364c8e76d4077723334, type: 3}
@@ -61296,6 +61302,7 @@ MonoBehaviour:
   reloadTime: 2
   isAutomatic: 0
   magazineSize: 10
+  animator: {fileID: 0}
   ammoLeft: 0
   isShooting: 0
   readyToShoot: 0
@@ -67778,48 +67785,48 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3137827
+      value: 1.749613
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.24961874
+      value: 0.1642302
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.4775436
+      value: -0.6103959
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.61115944
+      value: -0.68824524
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.34026143
+      value: 0.03349202
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.67538834
+      value: -0.71794534
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.23357421
+      value: -0.098748304
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 48.46
+      value: -10.83
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 203.967
+      value: 91.933
       objectReference: {fileID: 0}
     - target: {fileID: 400094, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 13.785
+      value: 5.131
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9100000, guid: 918bcafa020a31e4398e7835bd280151, type: 2}
     - target: {fileID: 13700000, guid: 3b9f20ead0cd74042bf67f04218cdb2f, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -75081,7 +75088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &2027100370
 NavMeshAgent:
   m_ObjectHideFlags: 0

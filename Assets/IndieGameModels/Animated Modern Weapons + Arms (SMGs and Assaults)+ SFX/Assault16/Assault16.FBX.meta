@@ -314,7 +314,7 @@ ModelImporter:
     second: M16A4
   - first:
       74: 7400000
-    second: Take 001 start
+    second: Take 001 idle
   - first:
       95: 9500000
     second: //RootNode
@@ -351,10 +351,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001 start
+      name: Take 001 idle
       takeName: Take 001
       internalID: 7400000
-      firstFrame: 0
+      firstFrame: 16
       lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
@@ -362,7 +362,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

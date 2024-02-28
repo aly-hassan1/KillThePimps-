@@ -12,10 +12,13 @@ public class Weapon : MonoBehaviour
     public ParticleSystem mozzelEffect;
     public GameObject impactEffect;
 
+
     [SerializeField] private float bulletRange;
     [SerializeField] private float fireRate, reloadTime;
     [SerializeField] private bool isAutomatic;
     [SerializeField] private int magazineSize;
+    private Animation anim;
+    public Animator animator;
     public int ammoLeft;
     public bool isShooting, readyToShoot, reloading;
     [SerializeField] private UIManager uiManager;
@@ -25,14 +28,18 @@ public class Weapon : MonoBehaviour
         ammoLeft = magazineSize;
         readyToShoot = true;
 
-        
+        anim = GetComponent<Animation>();
+        animator = gameObject.GetComponent<Animator>();
         uiManager = GameObject.Find("A7A").GetComponent<UIManager>();
+        animator.SetBool("idle", true);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isShooting && readyToShoot && !reloading && ammoLeft > 0)
+
+        if (isShooting && readyToShoot && !reloading && ammoLeft > 0)
         {
             PerformShot();
         }
@@ -45,6 +52,7 @@ public class Weapon : MonoBehaviour
     public void StartShot()
     {
         isShooting = true;
+
     }
     public void EndShot()
     {
@@ -63,6 +71,7 @@ public class Weapon : MonoBehaviour
             Destroy(impactGo, 2f);
             shootingSound.Play();
             mozzelEffect.Play();
+
         }
         else
         {
@@ -70,6 +79,7 @@ public class Weapon : MonoBehaviour
              mozzelEffect.Play();
              GameObject impactGo = Instantiate(impactEffect, hitinfo.point, Quaternion.LookRotation(hitinfo.normal));
              Destroy(impactGo, 2f);
+
 
         }
         ammoLeft--;
