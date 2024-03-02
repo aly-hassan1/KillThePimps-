@@ -36,10 +36,13 @@ public class InputManager : MonoBehaviour
         onFoot.Shoot.started += ctx => weapon.StartShot();
         onFoot.Shoot.canceled += ctx => weapon.EndShot();
         onFoot.Reload.performed += ctx => weapon.Reload();
+        onFoot.Aim.started += ctx => weapon.Aiming();
+        onFoot.Aim.canceled += ctx => weapon.StopAiming();
+
 
     }
-    
-    
+
+
 
     // Update is called once per frame
     void Update()

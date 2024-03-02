@@ -14,6 +14,7 @@ public class PlayerMotor : MonoBehaviour
     public float speed = 5f;
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class PlayerMotor : MonoBehaviour
             }
         }
     }
+
     public void ProcessMove(Vector2 input)
     {
         Vector3 moveDiraction = Vector3.zero;

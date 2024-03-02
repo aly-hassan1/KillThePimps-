@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float fireRate, reloadTime;
     [SerializeField] private bool isAutomatic;
     [SerializeField] private int magazineSize;
+    [SerializeField] private bool aiming;
     public Animator animator;
     public int ammoLeft;
     public bool isShooting, readyToShoot, reloading;
@@ -27,7 +28,7 @@ public class Weapon : MonoBehaviour
     {
         ammoLeft = magazineSize;
         readyToShoot = true;
-    
+        animator = GameObject.FindWithTag("Rifle").GetComponent<Animator>();
         uiManager = GameObject.Find("A7A").GetComponent<UIManager>();
 
     }
@@ -45,6 +46,7 @@ public class Weapon : MonoBehaviour
             EmptyGunShot();
 
         }
+
     }
     public void StartShot()
     {
@@ -54,6 +56,19 @@ public class Weapon : MonoBehaviour
     public void EndShot()
     {
         isShooting = false;
+    }
+    public void Aiming()
+    {
+        //animator.GetComponent<Animator>().Play("aim");
+        animator.SetBool("aiming", true);
+        aiming = true;
+    }
+    public void StopAiming()
+    {
+        //animator.GetComponent<Animator>().Play("stopAnim");
+        animator.SetBool("aiming", false);
+        aiming = false;
+
     }
     private void PerformShot()
     {
@@ -68,13 +83,36 @@ public class Weapon : MonoBehaviour
             Destroy(impactGo, 2f);
             shootingSound.Play();
             mozzelEffect.Play();
-            animator.GetComponent<Animator>().Play("shoot");
+            if (aiming && ammoLeft != 0 && isShooting)
+            {
+                animator.GetComponent<Animator>().Play("AimRecoil");
+                animator.SetBool("is Shoting", true);
+            }
+            else
+            {
+
+                animator.GetComponent<Animator>().Play("shoot");
+
+            }
+
 
         }
         else
         {
-             animator.GetComponent<Animator>().Play("shoot");
-             shootingSound.Play();
+            if (aiming && ammoLeft != 0 && isShooting)
+            {
+
+                animator.SetBool("is Shoting", true);
+
+                animator.GetComponent<Animator>().Play("AimRecoil");
+
+            }
+            else
+            {
+                animator.GetComponent<Animator>().Play("shoot");
+
+            }
+            shootingSound.Play();
              mozzelEffect.Play();
              GameObject impactGo = Instantiate(impactEffect, hitinfo.point, Quaternion.LookRotation(hitinfo.normal));
              Destroy(impactGo, 2f);
@@ -101,6 +139,8 @@ public class Weapon : MonoBehaviour
     private void ResetShot()
     {
         readyToShoot = true;
+        animator.SetBool("is Shoting", false);
+
     }
     public void Reload()
     {
